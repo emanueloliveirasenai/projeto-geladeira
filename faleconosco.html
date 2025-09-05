@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prática 1 HTML e CSS</title>
+        <link rel="stylesheet" type="text/css" href="css/site.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="imgs/logo.png" alt="Logo da página" title="Logo da página">
+            <h1>Geladeiras & Outros - FALE CONOSCO</h1>
+        </header>
+        <nav>
+            <a href="index.html"><div class="opcao">Início</div></a>
+            <a href="produtos.html"><div class="opcao">Geladeiras e Freezers</div></a>
+            <a href="faleconosco.html"><div class="opcao">Fale Conosco</div></a>
+        </nav>
+        <section>
+                <h2>Fale conosco!</h2>
+                <p>Ficou com alguma dúvida? Preencha este formulário e entraremos em contato!</p>
+
+                <form name="frmfaleconosco" method="get" id="#" onsubmit="return validaForm()">
+                    <fieldset class="faleConosco">
+                        <legend>Dados Pessoais:</legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="txtnome" id="nome" placeholder="Digite seu nome completo">
+                        <label for="fone">Telefone:</label>
+                        <input type="text" name="txtfone" id="fone" placeholder="(XX)XXXXX-XXXX">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="txtemail" id="email" placeholder="seuemail@exemplo.com">
+
+                    </fieldset>
+                    <fieldset class="faleConosco">
+                        <legend>Motivo do contato:</legend>
+                        <label for="motivo">Motivo:</label>
+                        <select name="selmotivo" id="motivo">
+                            <option value="">Escolha</option>
+                            <option value="RE">Reclamação</option>
+                            <option value="SU">Sujestão</option>
+                            <option value="PR">Informação sobre o produto</option>
+                        </select>
+                        <label for="comentario">Comentário:</label>
+                        <textarea name="txacomentario" id="comentario" placeholder="Insira seu comentário aqui:"></textarea>
+                        <button type="reset">Limpar</button><button type="submit">Enviar</button>
+                        
+                    </fieldset>
+
+                </form>
+
+
+        </section>
+        <footer>Copyright &copy; ADS2025</footer>
+    </body>
+</html>
